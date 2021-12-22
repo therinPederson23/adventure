@@ -2,7 +2,7 @@ import random
 points = 250
 
 print("Hello and welcome stranger! It's time for you to go on a great adventure!")
-print("You will now allocate your skill points into your skills.")
+print("You will now allocate your skill points into your skills. You have 250 skill points to use on 5 skills.")
 
 strength = int(input("How many points do you want to put into strength? (from 0-100)\n>"))
 if strength > 100 or strength < 0 or strength > points:
@@ -53,3 +53,37 @@ if magic > 100 or magic < 0 or magic > points:
 
 print("Now that you have finished allocating your points it's time for the real adventure to begin!")
 print("As your adventure begins you are walking down a path through the forest on a quest for some treasure.")
+print("As you are walking down the path you come across a ravine. There is an old worn down bridge that is too dangerous to cross, however there is a tree that fell across the ravine that could suffice as a bridge.")
+print("How will you cross the ravine?")
+print("1. use the fallen tree to cross.")
+print("2. use magic and levitate over the ravine.")
+print("3. use your amazing leg strength and leap over the ravine.")
+choice = input(">")
+
+if choice = 1:
+    roll = random.randrange(0, dex)
+    if roll > 20
+        print("You carefully step onto the fallen tree, you take one step at a time until finally you reach the other side.")
+    else:
+        print("You out one foot onto the leg but then you slip, landing on the log and then tumbling down the ravine to your death.")
+        print("Try not to be so clumsy next time.")
+        exit()
+elif choice = 2:
+    roll = random.randrange(0, magic)
+    if roll > 20
+        print("You use your magic to cast a levitation spell on your self and you gracefully glide to the other side of the ravine.")
+    else:
+        print("You cast a levitation spell on yourself except it failed, no worries though because you tried it again and it worked this time. However as you are almost to the other side of the ravine, your levitation spell fails and you fall to your death.")
+        print("Maybe you should've put more points into magic.")
+        exit()
+elif choice = 3:
+   roll = random.randrange(0, strength)
+   if roll > 20
+        print("You step back and get a running start. You get to the edge of the ravine and take a glorius leap of faith. You landed safely on the other side of the ravine.")
+   else:
+        print("You run up to the ravine and jump, but you get a bad jump and smack right into the side of the ravine wall. You then fall down into the ravine, where you die.")
+        print("This is why you don't skip leg day.")
+        exit()
+else:
+    print("That is not allowed, the game will now end.")
+    exit()
